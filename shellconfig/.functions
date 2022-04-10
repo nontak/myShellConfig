@@ -7,5 +7,6 @@ hmm() {
     esac
   done
 
+  [[ ! -e "~/.hmm" ]] && touch ~/.hmm
   if [ "$FLG_e" ]; then vim ~/.hmm; else cat ~/.hmm; fi
 }
