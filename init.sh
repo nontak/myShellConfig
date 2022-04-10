@@ -29,6 +29,7 @@ setup() {
   for file in `find ${DIR}/shellconfig -type f`; do
     ln -s $file ~
   done
+  [[ ! -e ~/.extra_path ]] && touch ~/.extra_path
 }
 
 force_setup() {
@@ -46,6 +47,7 @@ force_setup() {
   for file in `find ${DIR}/shellconfig -type f`; do
     ln -sf $file ~
   done
+  [[ ! -e ~/.extra_path ]] && touch ~/.extra_path
 }
 
 if [ "$FLG_h" ]; then help; exit 0; fi

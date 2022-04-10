@@ -1,5 +1,4 @@
-echo "ZSHRC"
+. ~/.extra_path
 . ~/.aliases
 . ~/.functions
-. ~/.aliases
 
