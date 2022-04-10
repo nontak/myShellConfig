@@ -1,4 +1,5 @@
 hmm() {
+  FLG_e=
   while getopts e OPT
   do
     case $OPT in
@@ -6,6 +7,5 @@ hmm() {
     esac
   done
 
-  if [ "$FLG_e" ]; then vim ~/.hmm; fi
-  cat ~/.hmm
+  if [ "$FLG_e" ]; then vim ~/.hmm; else cat ~/.hmm; fi
 }
