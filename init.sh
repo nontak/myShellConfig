@@ -30,6 +30,7 @@ setup() {
     ln -s $file ~
   done
   [[ ! -e ~/.extra_path ]] && touch ~/.extra_path
+  [[ ! -e ~/.hmm ]] && touch ~/.hmm
 }
 
 force_setup() {
@@ -48,6 +49,7 @@ force_setup() {
     ln -sf $file ~
   done
   [[ ! -e ~/.extra_path ]] && touch ~/.extra_path
+  [[ ! -e ~/.hmm ]] && touch ~/.hmm
 }
 
 if [ "$FLG_h" ]; then help; exit 0; fi

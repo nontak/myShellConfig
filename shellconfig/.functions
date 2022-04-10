@@ -1,0 +1,11 @@
+hmm() {
+  while getopts e OPT
+  do
+    case $OPT in
+       e) FLG_e=true;;
+    esac
+  done
+
+  if [ "$FLG_e" ]; then vim ~/.hmm; fi
+  cat ~/.hmm
+}
